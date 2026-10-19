@@ -19,6 +19,8 @@ body {
 }
 
 .logo {
+  width: 100px
+  height: auto;
   border: 1px solid #eee8e8;
   padding: 5px 15px;
   background-color: #e9e0e0;
@@ -65,10 +67,10 @@ body {
 
 .hero-image {
   flex: 1;
-  min-width: 250px;
-  height: 180px;
+  width: ;
+  height: auto;
   border: 1px solid #6d6868;
-  background-color: #fff;
+  background-color: #fffbfb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,7 +117,8 @@ body {
 }
 
 .img-placeholder {
-  height: 120px;
+  width: 100%;
+  height: auto;
   border: 1px dashed #6d6868;
   background-color: #fafafa;
   display: flex;
@@ -173,4 +176,41 @@ body {
   color: #333;
   border-radius: 3px;
   font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .navbar{
+    padding: 1rem;
+    flex-direction: column;
+  }
+  
+  .hero {
+    flex-direction: column-reverse;
+    padding: 2rem 1rem;
+    align-items: stretch;
+  }
+
+  .hero text h1{
+    font-size: 1.75rem;
+  }
+
+  .kartu{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .galeri-produk{
+    padding: 2rem 1rem;
+  }
+
+  .footer{
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px){
+  .navbar{
+    padding: 1rem;
+    flex-direction: column;
+  }
 }
